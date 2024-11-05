@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Сгенерируем данные (замените этот шаг на загрузку данных из файла)
+# Сгенерируем данные (если что заменим этот шаг на загрузку данных из файла)
 np.random.seed(42)
 n_samples = 100
 horsepower = np.random.uniform(50, 200, n_samples)
