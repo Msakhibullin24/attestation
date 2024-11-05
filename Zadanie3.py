@@ -1,5 +1,19 @@
+import seaborn as sns
+import pandas as pd
+
+# Загрузка данных
+df = sns.load_dataset('mpg')
+
+# Количество строк и столбцов
+print(f'Количество строк: {df.shape[0]}, Количество столбцов: {df.shape[1]}')
+
+
+
+print(df.describe().T)  # Показывает max для каждой числовой переменной
+
+
 # Быстрый анализ числовых переменных
-#print(df.describe().T)  # Показывает max для каждой числовой переменной
+'''
 
 # а так можно решить вот так 
 import pandas as pd
@@ -19,3 +33,4 @@ for column in df.select_dtypes(include='number').columns:
     print(f'1-й квартиль: {df[column].quantile(0.25)}')
     print(f'3-й квартиль: {df[column].quantile(0.75)}')
     print('-' * 30)
+'''
