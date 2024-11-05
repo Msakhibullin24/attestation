@@ -1,14 +1,10 @@
 # Быстрый анализ числовых переменных
 #print(df.describe().T)  # Показывает max для каждой числовой переменной
 
-
-
 # а так можно решить вот так 
 import pandas as pd
-
 # Загрузите ваши данные
 df = pd.read_csv('ваш_файл.csv')
-
 # Проведение анализа
 for column in df.select_dtypes(include='number').columns:
     print(f'Анализ для столбца: {column}')
